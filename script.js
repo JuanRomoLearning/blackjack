@@ -16,7 +16,17 @@ function generateSixDeck() {
     return sixDeck;
 }
 
-console.log("Blackjack")
+// Fisher–Yates shuffle
+function shuffleDeck(deck) {
+    let currentIndex = deck.length;
+    while (currentIndex) {
+        const randomIndex = Math.floor(Math.random() * currentIndex--);
+        [deck[currentIndex], deck[randomIndex]] = [deck[randomIndex], deck[currentIndex]];
+    }
+}
+
+console.log("♠ ♥ Blackjack ♣ ♦");
 
 let deck = generateSixDeck();
-console.log(deck);
+
+shuffleDeck(deck);
