@@ -1,6 +1,6 @@
-function generateSixDeck() {
-    const suits = ["Heart", "Spade", "Diamond", "Club"];
-    const values = ["Ace", "1", "2", "3", "4", "5", "6", "7", "8", "9", "King", "Queen", "Jack"];
+function generateDeck() {
+    const suits = ["Club", "Diamond", "Heart", "Spade"];
+    const values = ["Ace", "1", "2", "3", "4", "5", "6", "7", "8", "9", "Jack", "Queen", "King"];
 
     const sixDeck = [];
     for (let deck = 0; deck < DECKS; deck++) {
